@@ -38,13 +38,33 @@ count = 0
 largest_odd = None
 # Use a while loop to get 10 inputs
 while count < 10:
-    num = int(input(f'Please enter 10 integers: ({count + 1}): '))
+    num = int(input(f'({count + 1}) Please enter 10 integers : '))
     if num % 2 != 0: # Check if the number is odd
         largest_odd = num if largest_odd is None else max(largest_odd, num)
     count += 1
 # Output
 if largest_odd is not None:
-    print(f'The largest odd number is {largest_odd}.')
+    print(f'The largest odd number entered is {largest_odd}.')
 else:
     print('No odd number was entered.')
 ```
+
+# Bonus: Converting the '*while loops 2*' to a for loop
+```python
+largest_odd = None
+count = 0
+# Use a for loop to get 10 inputs
+for _ in range(10):
+    count += 1
+    num = int(input(f'({count}) Please enter 10 integers: '))
+    if num % 2 != 0: # Check if the number is odd
+        largest_odd = num if largest_odd is None else max(largest_odd, num)
+
+if largest_odd is not None:
+    print(f'The largest odd number entered is {largest_odd}.')
+else:
+    print('No odd number was entered.')
+```
+
+
+
