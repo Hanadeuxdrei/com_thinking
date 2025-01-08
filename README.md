@@ -1,1 +1,1 @@
-# com_thinking
+# comp_thinking
