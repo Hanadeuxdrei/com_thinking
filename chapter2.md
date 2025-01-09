@@ -66,5 +66,25 @@ else:
     print('No odd number was entered.')
 ```
 
+# 2.6 **For Loops and Range**
+
+**Finger exercise** Write a program that prints the sum of the prime numbers greater than 2 and less than 1000. Hint: you probably want to use a for loop that is a primality test nested inside a for loop that iterates over the odd integers between 3 and 999.
+
+```python
+prime_sum = 0                       # Start with sum at zero
+for i in range (3, 1000, 2):        # Check odd numbers
+    prime_detector = True           # Assuming it's prime
+    
+    for p in range(2, int(i**0.5) +1): # Check divisors up to sqaure root
+        if i % p == 0 :                 # If divides evenly 
+            prime_detector = False     # Not prime
+            break                      # Stop Checking
+            
+    if prime_detector:              # If nothing divided evenly
+        prime_sum += i              # Add to sum
+
+print(prime_sum)
+```
+
 
 
