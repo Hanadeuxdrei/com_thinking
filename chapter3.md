@@ -1,6 +1,5 @@
 # 3.1   Exhausitve Enumeration
-**Finger exercise 1** Finger exercise: Change the code in Figure 3-2 so that it returns the largest rather than <br>
-the smallest divisor. Hint: if y*z = x and y is the smallest divisor of x, z is the largest divisor of x.
+**Finger exercise 1** Finger exercise: Change the code in Figure 3-2 so that it returns the largest rather than the smallest divisor. <br> Hint: if y*z = x and y is the smallest divisor of x, z is the largest divisor of x.
 
 **Figure 3-2**
 ```python
@@ -33,9 +32,7 @@ else:
 ```
 <br>
 
-**Finger exercise 2** Finger exercise: Write a program that asks the user to enter an integer and prints two integers, <br>
-root and pwr, such that 1 < pwr < 6 and root**pwr is equal to the integer entered by the user. <br>
-If no such pair of integers exists, it should print a message to that effect.
+**Finger exercise 2** Finger exercise: Write a program that asks the user to enter an integer and prints two integers, root and pwr, <br> such that 1 < pwr < 6 and root**pwr is equal to the integer entered by the user. If no such pair of integers exists, it should print a message to that effect.
 
 ### Answer
 ```python
