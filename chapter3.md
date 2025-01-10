@@ -185,3 +185,34 @@ Starting from right:<br>
 0 in the eights(2^3) place = 0 <br>
 1 in the sixteens(2^4) place = 16 <br>
 Add them all up: 16 + 2 + 1 = 19 <br>
+
+# 3.4 Newton-Ralphson
+
+**Finger exercise**: Finger exercise: Add some code to the implementation of Newton–Raphson that keeps track of the number of iterations used to find the root. Use that code as part of a program that compares the efficiency of Newton–Raphson and bisection search. (You should discover that Newton–Raphson is far more efficient.)
+
+### the Newton-Raphson implementation
+```python
+k = 25
+epsilon = 0.01
+guess = k / 2
+while abs(guess**2 - k) >= epsilon:
+    guess = guess - (((guess**2) - k) / (2*guess))
+print('Squre root of', k, 'is about', guess)
+```
+
+### Answer
+```python
+k = 12345678
+epsilon = 0.01
+guess = k / 2
+iterations_newton = 0
+
+print("Newton-Raphson Method:")
+while abs(guess**2 - k) >= epsilon:
+    print(f"Iteration {iterations_newton}: guess = {guess}, guess^2 = {guess**2}")
+    iterations_newton += 1
+    guess = guess - (((guess**2) - k) / (2*guess))
+
+print('Square root of', k, 'is about', guess)
+```
+When k = 12345678, the Newton-Raphson Method is more than 3 times faster than the earlier bisection search.
