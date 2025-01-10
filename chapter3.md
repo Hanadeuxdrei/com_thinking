@@ -215,4 +215,4 @@ while abs(guess**2 - k) >= epsilon:
 
 print('Square root of', k, 'is about', guess)
 ```
-When k = 12345678, the Newton-Raphson Method is more than 3 times faster than the earlier bisection search.
+When k = 12345678, the Newton-Raphson Method is more than 3 times faster than previous(3.2) bisection search.
