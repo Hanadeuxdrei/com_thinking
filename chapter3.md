@@ -171,17 +171,17 @@ while max_attempts > 0:
 print(f"Drop sequence: {floors}")
 ```
 
-#3.3 A few words about using floats
+# 3.3 A few words about using floats
 
 **Finger exercise**: Finger exercise: What is the decimal equivalent of the binary number 10011?
 
 ### Answer
-Finger exercise binary numbers
-Convert 10011 to decimal:
-Starting from right:
-1 in the ones(2^0) place = 1
-1 in the twos(2^1) place = 2
-0 in the fours(2^2) place = 0
-0 in the eights(2^3) place = 0
-1 in the sixteens(2^4) place = 16
-Add them all up: 16 + 2 + 1 = 19
+Finger exercise binary numbers <br>
+Convert 10011 to decimal: <br>
+Starting from right:<br>
+1 in the ones(2^0) place = 1 <br>
+1 in the twos(2^1) place = 2 <br>
+0 in the fours(2^2) place = 0 <br>
+0 in the eights(2^3) place = 0 <br>
+1 in the sixteens(2^4) place = 16 <br>
+Add them all up: 16 + 2 + 1 = 19 <br>
